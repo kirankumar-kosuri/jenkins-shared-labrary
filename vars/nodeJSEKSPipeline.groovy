@@ -11,8 +11,8 @@ pipeline{
         COURSE = "Jenkins"
         appVersion = ""
         ACCOUNT_ID = "921040036993"
-        PROJECT = "roboshop"
-        COMPONENT = "catalogue"
+        PROJECT = configMap.get("project")
+        COMPONENT = configMap.get("component")
     }
 
     options {
