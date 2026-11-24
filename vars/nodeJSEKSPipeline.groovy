@@ -1,4 +1,4 @@
-def call () {
+def call (Map configMap) {
     // pre-build stage
 pipeline{
     agent{
