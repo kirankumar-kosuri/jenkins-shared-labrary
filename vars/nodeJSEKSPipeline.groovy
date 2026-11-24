@@ -1,4 +1,4 @@
-def call (Map configMap){
+def call () {
     // pre-build stage
 pipeline{
     agent{
@@ -19,8 +19,6 @@ pipeline{
         // timeout(time: 10, unit: 'SECONDS') 
         disableConcurrentBuilds()
     }
-
-    
 
 // build stage
     stages{
@@ -134,7 +132,5 @@ pipeline{
         //     echo "Pipeline is Aborted please Check It"
         // }
     }
- 
-}
-
+  }
 }
